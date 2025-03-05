@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "executives",
+  "info": {
+    "singularName": "executive",
+    "pluralName": "executives",
+    "displayName": "executive"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "role": {
+      "type": "text",
+      "required": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Current Executive",
+        "Past Executive",
+        "Founder",
+        "Faculty Advisor"
+      ],
+      "required": true
+    }
+  }
+}
